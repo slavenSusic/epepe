@@ -1,0 +1,13 @@
+
+
+
+.c-breadcrumbs__crumb > a {
+  text-transform: lowercase!;
+}
+.c-breadcrumbs__link {
+  font-size: var(--size-font-breadcrumbs);
+  text-decoration: none;
+  color: var(--color-link-breadcrumbs);
+  line-height: 1;
+  font-weight: 600;
+}

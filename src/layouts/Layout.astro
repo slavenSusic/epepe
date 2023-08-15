@@ -1,7 +1,10 @@
 ---
+import Navbar from '../components/Navbar';
+// import { ViewTransitions } from 'astro:transitions';
 export interface Props {
 	title: string;
 }
+import { ViewTransitions } from 'astro:transitions';
 
 const { title } = Astro.props;
 ---
@@ -12,25 +15,35 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
+		
 	</head>
-	<body>
-		<slot />
-	</body>
+	<main id="swup" class="transition-fade">
+
+
+	<body class="relative">
+		<div class="fixed top-0 left-0 z-50 w-full">
+			<Navbar client:load />
+			
+		</div>
+		<div >
+			<slot />
+		</div>
+	</main>
+	<style>
+		@import "../Css/base.css";
+	  </style>
+	 <script src="../js/app.js"></script>
+</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>

@@ -10,6 +10,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.7.2"
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
+    "@swup/fade-theme": "^1.0.5",
+    "@swup/overlay-theme": "^2.0.0",
+    "@swup/scroll-plugin": "^3.0.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "astro": "^2.10.8",
+    "astro-breadcrumbs": "^1.6.1",
+    "flowbite": "^1.6.6",
+    "framer-motion": "^10.12.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@swup/head-plugin": "^1.3.0",
+    "@swup/slide-theme": "^1.0.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }

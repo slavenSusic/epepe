@@ -1,0 +1,37 @@
+---
+const {footerText,grayText}=Astro.props
+---
+
+
+<main class="flex flex-col prose-xl lg:prose-2xl">
+
+<div class="bg-black px-20">
+<p class="text-gray-500 pt-32 md:pt-20 -mt-20 font-bold">
+	{grayText}
+</p>
+<div class="grid grid-cols-1 not-prose gap-20 items-center md:grid-cols-4 mt-1 justify-between py-20">
+<h2 class="col-span-3 w-full text-5xl md:w-1/2  md:text-6xl text-white font-bold">
+{footerText}
+</h2>
+<span >
+<button class="bg-red-500 py-4 px-5 text-white rounded-lg text-sm font-bold">
+Kontaktirajte nas  &rarr;
+</button>
+</span>
+
+</div>
+</div>
+<div class="bg-black/90 flex flex-wrap justify-between px-20 text-white">
+	<p>
+		© <span id="year"></span> epepe.d.o.o
+	</p>
+	<p>
+		Impressum | Politike privatnosti | O kolačićima
+	</p>
+
+</div>
+</main>
+<script>
+	document.querySelector('#year').textContent= new Date().getFullYear().toString()
+
+</script>

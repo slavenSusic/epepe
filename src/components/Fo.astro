@@ -1,0 +1,126 @@
+---
+import Footer from "./Footer.astro";
+import Fo3 from "./public/Fo.png";
+import Fo2 from "./public/Fo2.png";
+import fbFooter from "./public/fbFooter.jpg";
+const footerText="Jednostavno! Dovoljno je da se javite i mi ćemo za vas napraviti sve ostalo."
+const  grayText="Kako dalje?"
+---
+
+
+
+<article class=" relative prose-base lg:prose-2xl  ">
+    <main class=" absolute top-20 ">
+        <section class="px-5 py-20">
+            <div>
+        <h4 class="text-gray-800 font-bold">Facebook oglašavanje @ epepe</h4>
+               <h1 class="font-bold w-full lg:w-1/2 ">Među milijardama  korisnika društvenih mreža ciljanim kampanjama pronalazimo Vaše kupce.
+        </h1>
+    </div>
+
+    </section>
+
+
+        <section class=" bg-gray-100 md:flex  pl-10 py-20">
+            <div class="flex flex-col xl:pl-20 xl:pr-20 justify-center items-start lg:w-full not-prose">
+          
+            <h2 class="font-bold w-1/2 lg:w-full text-4xl md:pr-5 xl:text-6xl "><span class=""> Facebook oglašavanje</span>
+                </h2>
+            </div> 
+            <div class=" px-5 lg:px-28 py-10 md:border-l-2 block border-black prose-lg "> 
+                <p class=" xl:flex xl:flex-row text-justify ">
+
+                    <span class="2xl:px-10"> 
+                        Facebook i Instagram dvije su najpopularnije društvene mreže, a njihovo promišljeno korištenje nužan dio svake marketinške strategije. Zašto je to tako? Facebook i Instagram imaju više od 2 milijarde korisnika u svijetu, od čega je u Hrvatskoj aktivno njih 1,5 milijuna. 
+                </span>  
+                    <span class="xl:px-10">imaju više od 2 milijarde korisnika u svijetu, od čega je u Hrvatskoj aktivno njih 1,5 milijuna.
+
+                        Nažalost, samo redovitim objavljivanjem postova nećete biti u mogućnosti doći do većine vaše željene publike pa tu, kao Superman, dolazi Facebook & Instagram oglašavanje.</span>
+            </p>
+        </div>
+        </section>
+
+
+        <section class=" md:flex justify-center 2xl:items-start 2xl:px-44  md:prose-xl">
+            <div class="w-full md:w-1/3 pt-20 prose-sm md:prose-xl px-10">
+            <h2 class="font-bold lg:pl-20 2xl:pl-32">Što radi naš tim <span>
+              za Facebook oglašavanje? </span></h2>
+            </div>
+            <div class="flex px-5">
+            <img src={Fo3} alt=""
+            class="w-1/2">
+            <img src={Fo2} alt=""
+            class="w-1/2">
+        </div> 
+        </section>
+
+      
+        <section class="prose-lg lg:prose-2xl grid grid-cols-1 gap-2
+        md:grid-cols-2 text-justify lg:mx-20">
+
+           <div class="px-5">
+                <p>01.</p>
+                <h4 class="font-bold">Zašto oglašavati na Facebook-u?</h4>
+                <p>
+                    Facebook oglašavanje nudi vam ogromne mogućnosti i često je ključno u postizanju postavljenih ciljeva poslovanja. Neki od njih mogu biti:
+
+                </p>
+            <ul>
+                <li>✔️ podizanje svjesnosti o svom brandu</li>
+                <li>✔️ povećanje interakcije na vašim  objavama</li>
+                <li>✔️ dosezanje vaše potencijalne publike određenih interesa određenim lokacijama</li>
+                <li>✔️ povećanje prometa na web stranici</li>
+                <li>✔️ povećanje prodaje vaših  proizvoda ili usluga</li>
+                i još mnogo toga…
+                    
+            </ul>
+            </div>
+
+    
+            <div class="px-5">
+                <p>02.</p>
+                <h4 class="font-bold">Najveća prednost Facebook oglašavanja
+                </h4>
+                <p>
+                    Najveća prednost Facebook oglašavanja je u ciljanju svoje potencijalne publike. Korisnici Facebook definiraju kao komadić osobnog online prostora te uređuju svoje profile raznim detaljima iz vlastitog života. Isto tako, gledanjem određenog sadržaja “šalju poruku” samom Facebook-u o tome koji je sadržaj za njih zanimljiv i aktualan u tom trenutku.
+
+
+                </p>
+            <p>
+                Pomoću tih podataka Facebook filtrira korisnike i omogućuje oglašivačima precizno ciljanje na temelju njihove dobi, spola, lokacije na kojoj se nalaze, statusa veze te vlastitih interesa i želja. 
+
+
+                    
+                    
+                </p>
+            </div>
+
+            
+        </section>
+        <section class="bg-[#f7f6f6] prose-xl grid grid-cols-1 md:grid-cols-3  md:flex md:items-center md:justify-center px-5 gap-10">
+            <h2 class="font-bold col-span-2 py-15 whitespace-nowrap">
+                Zašto epepe?</h2>
+            <div class="md:w-2/3  md:flex-col col-span-2 md:border-l-2 ">
+            <p class="text-justify md:px-10"> 
+                Digitalna agencija epepe mjesečno vodi kampanje vrijedne stotine tisuća kuna za svoje klijente. Naš posao uključuje sve aspekte oglašavanja:       </p>
+        <ul >
+      <li> ✔️ planiranje kampanje </li> 
+      <li> ✔️ izrada oglasa</li> 
+      <li> ✔️ postavljanje oglasa</li>  
+      <li> ✔️ praćenje i analitika </li> 
+      <li>  ✔️ svakodnevna prilagodba kampanje</li> 
+      <li> ✔️ izvješćivanje o uspješnosti</li> 
+      <p>I onda ponovo, sve ispočetka…</p>
+    </ul>
+   
+</div>
+      
+        </section>
+
+        <Footer footer={fbFooter}
+        footerText={footerText}
+        grayText={grayText}/>
+    </main>
+
+  
+</article>

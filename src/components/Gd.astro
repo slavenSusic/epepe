@@ -1,0 +1,105 @@
+---
+import Footer from "./Footer.astro";
+import go1 from "./public/gd1.png"
+import go2 from "./public/gd2.png"
+import footer from "./public/drustMre.jpg"
+const footerText="Jednostavno! Dovoljno je da se javite i mi ćemo napraviti sve ostalo."
+const  grayText="Kako do sjajnog novog dizajna?"
+---
+<article class=" relative prose-base lg:prose-2xl">
+    <main class=" absolute top-20 ">
+        <section class="px-5 py-20">
+            <div>
+            <h4 class="text-gray-800 font font-bold">Grafički dizajn @ epepe</h4>
+            <h1 class="font-bold w-full lg:w-1/2 ">Stvaramo vizualna rješenja koja inspiriraju ljude i potiču emocije.</h1>
+        </section>
+
+                  <section class=" bg-gray-100 md:flex  py-20">
+                <div class="flex flex-col  pl-20 2xl:pl-20 xl:pr-20 justify-center items-start  not-prose">
+              
+                <h2 class="font-bold md:w-1/2 text-4xl md:pr-5 xl:text-5xl ">
+                    <span class="md:whitespace-nowrap">Grafički dizajn</span>-<span class="whitespace-nowrap">esencija kreacije</span>  
+                    </h2>
+                </div> 
+                <div class=" px-5 lg:px-20 py-10 md:border-l-2 block border-black prose-base "> 
+                    <p class="md:flex md:flex-col xl:flex-row text-justify gap-2">
+                        <span class="2xl:px-10"> 
+                            Prva online trgovina nastala je 1982. godine u Bostonu. Na platformi imena Boston Computer Exchange mogla su se kupovati računala i njihove komponente. Od tih pionirskih početaka do danas internet prodaja nezaustavljivo raste. U 2022. maloprodajni dio e-trgovine iznosi oko 5,7 trilijuna američkih dolara, a procjenjuje se da će ova brojka tijekom sljedećih pet godina porasti za 50%! Danas gotovo da i nema trgovine koja nema svoju online varijantu. Odnosno, </span> 
+                    
+                        <span class="xl:px-10">može se reći da postoji sve manji broj online trgovina koje postoje i u fizičkom obliku. Izrada web shopa je proces koji se sastoji od niza koraka, od pripreme materijala do dizajna i developmenta. U epepe-u nastaju profitabilne online trgovine prilagođene specifičnom načinu poslovanja tvrtki. Dizajniramo web stranice raznolikih značajki, izgleda i funkcionalnosti kako bi se najbolje prilagodile potrebama naših klijenata.</span>
+
+                </p>
+            </div>
+            </section>
+
+         
+            <section class=" md:flex justify-center 2xl:items-start 2xl:px-44  md:prose-xl">
+                <div class=" md:w-1/3 pt-20 prose-lg md:prose-xl px-5">
+                <h2 class="font-bold lg:pl-10 2xl:pl-22">Što radi naš dizajnerski tim? </h2>
+                </div>
+                <div class="flex px-5">
+                <img src={go1} alt=""
+                class="w-1/2">
+                <img src={go2} alt=""
+                class="w-1/2">
+            </div> 
+            </section>
+
+            <section class="prose-lg lg:prose-2xl grid grid-cols-1 gap-2
+            md:grid-cols-2 text-justify lg:mx-20">
+
+            <div class="px-5">
+                    <p>01.</p>
+                    <h4 class="font-bold">Branding i izrada logotipa</h4>
+                    <p>
+                        Prema istraživanju koje je proveo Missouri University of Science and Technology, posjetitelji kompanije posvete u prosjeku 6,48 sekundi logotipu brenda. Brendiranje je dugotrajni proces koji započinje stvaranjem vizualnog identiteta brenda.
+                    </p>
+                    <p>
+                        Agencija epepe kreirat će logotip i osnovnu poruku koja odgovara imidžu i cilju Vašeg brenda. I koji će izgledati dobro na različitim platformama. Definiranjem knjige grafičkih standarada pripremit ćemo i smjernice za primjenu logotipa na svim relevantnim medijima – od posjetnica do reklama.
+                    </p>
+             
+                 
+                </div>
+
+                <div class="px-5">
+                    <p>02.</p>
+                    <h4 class="font-bold">Grafički dizajn</h4>
+                    <p>
+                        Boja. Font. Ključna fotografija. Dimenzije. Odnosi. Linije. Prostor. Svaki od ovih faktora, uz još mnoge druge, utječe na to kakva je poruka koju šaljete i kako će ona biti primljena kod ciljane publike. Kvalitetan grafički dizajn ispunit će slike i riječi – značenjem.
+                    </p>
+                    <p>
+                        Agencija epepe nudi širok spektar usluga grafičkog dizajna, od posjetnica, preko brošura i letaka do oglasa za tisak i plakate.
+                    </p>
+                 
+                </div>
+
+                <div class="px-5">
+                    <p>03.</p>
+                    <h4 class="font-bold">Dizajn proizvoda</h4>
+                    <p>
+                        Koliko god tvrdili da ne treba suditi knjigu po koricama, 92,6 posto ljudi kaže da im je vizualna dimenzija primarni faktor kod odluke o kupnji proizvoda. Izgled proizvoda osnovna je poruka kupcima. Dizajnom definiramo radi li se o luksuznom ili masovnom proizvodu, suvremenom ili tradicionalnom, koja je njegova ciljana publika, koje će im probleme riješiti, kako bi se zbog toga trebali osjećati i još mnogo toga…               
+                    </p>
+               
+                </div>
+
+                <div class="px-5">
+                    <p>04.</p>
+                    <h4 class="font-bold">Dizajn interijera</h4>
+                    <p>
+                        Kao što je izgled proizvoda prva stvar koja će privući ili odbiti kupce, izgled Vašeg interijera šalje snažnu poruku posjetiteljima, koja mora biti usklađena s vrijednostima Vašeg brenda.
+                    </p>
+                    <p>
+                        Agencija epepe pruža usluge savjetovanja o izboru namještaja, podnih i zidnih obloga, rasvjete, ali i teksturama i bojama interijera. Izrađujemo idejna rješenja i 3D vizualizacije, a po potrebi organiziramo i nadgledamo radove u prostoru.
+                    </p>
+                </div>
+
+
+            </section>
+            <Footer footer={footer}
+            footerText={footerText}
+            grayText={grayText}/>
+        </main>
+   
+      
+    </article>
+    

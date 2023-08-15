@@ -1,0 +1,64 @@
+---
+import aroma from "/aRoma.jpg";
+import AuroATM from "/AuroATM.jpg";
+import Bebolin from "/Bebolin.jpg";
+import auroDomus from "/auroDomus.jpg";
+import BENIN from "//BENIN.jpg";
+import Bitoraj from "/Bitoraj.jpg";
+import CatamaranYachting from "/CatamaranYachting.jpg";
+import DragaMoja from "/DragaMoja.jpg";
+import HotelBitoraj from "/HotelBitoraj.jpg";
+import INTERSTROJ from "/INTERSTROJ.jpg";
+import Monestiq from "/Monestiq.jpg";
+import TZOpatija from "/TZOpatija.jpg";
+import VitoCoza from "/VitoCoza.jpg";
+import Aurodomus2 from "/Aurodomus2.jpg";
+
+export function portfolioCats() {
+    const portfolioCategories = [
+        { id: 1, name: "aRoma", src: aroma, category: "Drustvene" },
+        { id: 2, name: "AuroATM", src: AuroATM, category: "Web" },
+        { id: 3, name: "Bebolin", src: Bebolin, category: "Drustvene" },
+        { id: 4, name: "Auro Domus", src: auroDomus, category: "Drustvene" },
+
+        { id: 5, name: "BENIN", src: BENIN, category: "Drustvene" },
+        { id: 6, name: "Bitoraj", src: Bitoraj, category: "nature" },
+        {
+            id: 7,
+            name: "Catamaran Yachting",
+            src: CatamaranYachting,
+            category: "Web",
+        },
+        { id: 8, name: "Draga Moja", src: DragaMoja, category: "Drustvene" },
+
+        { id: 9, name: "Hotel Bitoraj", src: HotelBitoraj, category: "Web" },
+        { id: 10, name: "INTERSTROJ", src: INTERSTROJ, category: "Web" },
+        { id: 11, name: "Monestiq", src: Monestiq, category: "Web" },
+        { id: 12, name: "TZ Opatija", src: TZOpatija, category: "Drustvene" },
+        { id: 12, name: "Vito Coza", src: VitoCoza, category: "Drustvene" },
+        { id: 13, name: "Auro Domus", src: Aurodomus2, category: "Web" },
+    ];
+    return portfolioCategories.map(({ id, name, src }) => {
+        return {
+            params: { id },
+            props: { name, src },
+        };
+    });
+}
+const { name, src } = Astro.props;
+---
+<html>
+<div class="relative group">
+    <img src={src} alt="" class="" />
+
+    <div
+        class="w-full h-full hover:bg-black/30 z-20 absolute top-0 transition-all duration-500"
+    >
+        <p
+            class="z-10 text-black text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100"
+        >
+            {name}
+        </p>
+    </div>
+</div>
+</html>

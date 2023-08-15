@@ -1,0 +1,164 @@
+---
+import MiniFooter from "./MiniFooter.astro";
+
+import footer from "./public/fbfooter.jpg"
+import cover from "./public/onama.jpg"
+const footerText="Vrijeme je da prijeđemo na vas. Spremni za suradnju?"
+const grayText ="Ok, dosta o nama"
+import { zaposleni } from "../hooks/zaposlenici";
+import linkedin from "/public/linkedin1.png"
+---
+
+    <article class=" relative prose-md md:prose-lg lg:prose-2xl  ">
+       
+        <main class=" absolute top-20 ">
+            <section class="px-20 py-20">
+            <h4 class="text-gray-800 font font-bold py-5 text-xl md:pl-10">Što radimo?</h4>
+            <div class="not-prose">
+            <h1 class="font-bold text-5xl md:text-6xl md:pl-10  md:w-1/2">Kreativne ideje, pouzdane strategije i usmjereni razvoj u stvaranju trajnih brendova i kvalitetnog odnosa s kupcima.</h1>
+            </div>
+        </section>
+
+
+
+            <section class=" bg-gray-100 md:flex  pl-10 py-20">
+                <div class="flex flex-col xl:pl-20 xl:pr-20 justify-center items-start lg:w-full not-prose">
+                <p class="font-bold py-5">Što znači</p>
+                <h2 class="font-bold w-1/2 lg:w-full text-4xl md:pr-5 xl:text-6xl "><span class="whitespace-nowrap md:whitespace-normal lg:whitespace-nowrap"> "Full service"</span>
+                    <span class="whitespace-nowrap md:whitespace-normal">  agencija za marketing </span> </h2>
+                </div> 
+                <div class=" px-5 lg:px-10 py-10 md:border-l-2 block border-black prose-base "> 
+                    <p class="md:flex md:flex-col xl:flex xl:flex-row text-justify 2xl:gap-10 ">
+                <span class="2xl:px-10">  
+                Epepe je ‘full service’ agencija za marketing. To znači da okupljamo tim iskusnih stručnjaka iz raznih područja marketinga, koji mogu ponuditi široki spektar usluga klijentima željnima veće vidljivosti u ‘online’ i ‘offline’ svijetu te boljeg povezivanja sa svojim kupcima.
+                    Ukratko, na jednom mjestu imamo sve što je vašoj tvrtki potrebno: od izrade i održavanja internetskih stranica, preko izrade sadržaja i održavanja društvenih mreža do dizajna i oglašavanja na internetu i izvan njega.
+                </span>  
+                <span class="xl:px-10">  
+                    Stvaramo sjajne internetske stranice i web-shopove. Vodimo društvene mreže i sve ostale aspekte direktne komunikacije s klijentima. Izrađujemo kreativne sadržaje u tekstu i slici (i pokretnim slikama, dapače). Osmišljavamo marketinške strategije i PR kampanje.
+                    Da, radimo i Google oglase i Facebook oglase i oglase za televiziju i radio i one plakate s trakicama na kojima su zapisani brojevi telefona i koje se mogu otrgnuti kad se plakat zalijepi na rasvjetni stup…
+                    OK, ovo zadnje ipak ne radimo.
+                </span>  
+            </p>
+            </div>
+            </section>
+
+            <div class="not-prose">
+                <img src={cover} alt="" class="w-full h-[50%]" >
+            </div>
+
+
+          <div class="block md:flex md:justify-center md:items-center prose-base  pb-44 xl:pr-40">
+            <section class="px-5 xl:pl-28 lg:px-0">
+                <h4 class="text-gray-800 font font-bold">epepe je</h4>
+                <h1 class="font-bold">Prvi korak prema ostvarenju vaših planova.</h1>
+            </section>
+            <div class="py-10 px-5">
+                <section class="grid grid-cols-1 gap-10 md:grid-cols-2 text-justify py-20 md:px-5  md:border-l-2 border-black xl:prose-xl xl:pr-42">
+                
+
+                    <div class="lg:px-20">
+                        <p class="font-bold">01.</p>
+                        <h3 class="font-bold">Agencija za marketing</h3>
+                        <p>
+                            Mi smo skladni tim profesionalaca specijaliziranih za različite poslove u marketingu, koji čine cjelinu moćniju od zbroja dijelova.
+                        </p>
+                
+                        <p>
+                            Na jednom mjestu pokrivamo sve vaše marketinške potrebe.
+                        </p>
+                    </div>
+    
+                    <div class="lg:px-20">
+                        <p class="font-bold">02.</p>
+                        <h3 class="font-bold">Mjesto dobrog dizajna</h3>
+                        <p>
+                            Naše ime je nastalo na valu nostalgije kao referenca na blok televizijskih reklama poznat kao EPP ili „ekonomsko-promidžbeni program“.
+                        </p>
+                    <p>
+                        A naši dizajneri se inspiriraju poviješću dok stvaraju za budućnost.
+                                                
+                        </p>
+                   
+    
+                    </div>
+    
+                    <div class="lg:px-20">
+                        <p class="font-bold">03.</p>
+                        <h3 class="font-bold">Digitalna agencija</h3>
+                        <p>
+                            Imamo „analogne“ korijene, ali živimo u digitalnom svijetu. Zato smo idealan suputnik na sve kompleksnijem „on-line“ tržištu.
+                    <p>
+                        I da, čuli smo za metaverse.
+                                                   
+                        </p>
+                    
+                    </div>
+    
+                    <div class="lg:px-20">
+                        <p class="font-bold">04.</p>
+                        <h3 class="font-bold">Agencija za oglašavanje</h3>
+                        <p>
+                            Od „gugla do drito u vugla“, pokrivamo najširi mogući spektar u oglašavačkoj industriji. Online i offline oglašavanje, ali i izravna komunikacija putem društvenih mreža i call centra.
+                        </p>
+                    <p>
+                        Imamo sve što je suvremenoj tvrtki potrebno za dolazak do klijenata.
+                        </p>
+                    </div>
+    
+    
+                </section>
+            </div>
+          </div>
+  
+          <section class="py-20 not-prose  px-10  md:px-20 md:flex items-center md:gap-20 bg-gray-100">
+            <h2 class="font-bold whitespace-nowrap text-6xl ">Naš tim</h2>
+            <div class="md:border-l-2 border-black md:pl-3">
+            <p class="  md:px-20 lg:gap-10 text-justify text-xl py-5"> 
+                  
+                Strojevi mogu puno toga, ali još uvijek nisu sposobni stvoriti orignalne misli i kreativne ideje. <br><span class="pt-10">Zato naša agencija za marketing mora zapošljavati – ljude. Nisu savršeni primjerci svoje vrste, ali zato su dosta dobri u dizajnu, pisanju tekstova, izradi web stranica i nizu drugih stvari.</span>
+             
+            </p>
+        </div>
+        </section>
+
+
+    
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 not-prose pt-10   ">
+             {zaposleni.map((empo) => {
+                return (
+                    <div class="relative group" >
+                <div class="w-full overflow-hidden h-full  ">
+                   <img src={empo.pic} alt="humans" class="w-full rounded-lg transition-all duration-500 object-cover group-hover:scale-[110%] " />
+                    </div>
+
+                    <div class=" ">
+                     
+                        
+                        <div class="text-white flex-col opacity-0 transition-all ease-in-out group duration-500 absolute                      lg:bottom-0  bottom-0 translate-y-4 group-hover:-translate-y-0 group-hover:opacity-100 w-full 
+                     group-hover:bg-gradient-to-t from-purple-800 transparent h-1/2 lg:h-full">
+                     <div class= "pt-48 md:pt-20 lg:pt-10 xl:pt-24 2xl:pt-44 flex text-base not-prose flex-col justify-start items-start pl-5 xl:pl-16">
+
+                     <p class="group font-bold text-2xl"> {empo.name}</p>
+                     <p class="text-lg">{empo.role}</p>
+
+                     <a href="https://linkedin.com/" class="py-0 lg:pb-20"> <img src={linkedin} alt="" class="py-10 md:py-5"> </a>
+                    </div>
+                    </div>
+                     
+                     </div>
+                    </div>
+                    )
+             })}
+
+     
+            </div>
+       
+
+        <MiniFooter footerText={footerText}
+        grayText={grayText}/>
+            
+        </main>
+  
+      
+    </article>
+    
