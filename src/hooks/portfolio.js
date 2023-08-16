@@ -1,19 +1,19 @@
-import aroma from "/public/aRoma.jpg";
-import AuroATM from "/public/AuroATM.jpg";
-import Bebolin from "/public/Bebolin.jpg";
-import auroDomus from "/public/auroDomus.jpg";
-import BENIN from "/public//BENIN.jpg";
-import Bitoraj from "/public/Bitoraj.jpg";
-import CatamaranYachting from "/public/CatamaranYachting.jpg";
-import DragaMoja from "/public/DragaMoja.jpg";
-import HotelBitoraj from "/public/HotelBitoraj.jpg";
-import INTERSTROJ from "/public/INTERSTROJ.jpg";
-import Monestiq from "/public/Monestiq.jpg";
-import TZOpatija from "/public/TZOpatija.jpg";
-import VitoCoza from "/public/VitoCoza.jpg";
-import Aurodomus2 from "/public/Aurodomus2.jpg";
+import aroma from "../images//aRoma.jpg";
+import AuroATM from "../images/AuroATM.jpg";
+import Bebolin from "../images/Bebolin.jpg";
+import auroDomus from "../images/auroDomus.jpg";
+import BENIN from "../images/BENIN.jpg";
+import Bitoraj from "../images/Bitoraj.jpg";
+import CatamaranYachting from "../images/CatamaranYachting.jpg";
+import DragaMoja from "../images/DragaMoja.jpg";
+import HotelBitoraj from "../images/HotelBitoraj.jpg";
+import INTERSTROJ from "../images/INTERSTROJ.jpg";
+import Monestiq from "../images/Monestiq.jpg";
+import TZOpatija from "../images/TZOpatija.jpg";
+import VitoCoza from "../images/VitoCoza.jpg";
+import Aurodomus2 from "../images/Aurodomus2.jpg";
 
-import PharmaProf from "/public/PharmaProf.jpg";
+import PharmaProf from "../images/PharmaProf.jpg";
 
 
 

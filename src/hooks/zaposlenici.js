@@ -1,16 +1,16 @@
 
-import z1 from "/public/z1.jpg";
-import z2 from "/public/z2.jpg";
-import z3 from "/public/z3.jpg";
-import z4 from "/public/z4.jpg";
-import z5 from "/public/z5.jpg";
-import z6 from "/public/z6.jpg";
-import z7 from "/public/z7.jpg";
-import z8 from "/public/z8.jpg";
-import z9 from "/public/z9.jpg";
-import z10 from "/public/z10.jpg";
-import z11 from "/public/z11.jpg";
-import z12 from "/public/z12.jpg";
+import z1 from "../images/z1.jpg";
+import z2 from "../images/z2.jpg";
+import z3 from "../images/z3.jpg";
+import z4 from "../images/z4.jpg";
+import z5 from "../images/z5.jpg";
+import z6 from "../images/z6.jpg";
+import z7 from "../images/z7.jpg";
+import z8 from "../images/z8.jpg";
+import z9 from "../images/z9.jpg";
+import z10 from "../images/z10.jpg";
+import z11 from "../images/z11.jpg";
+import z12 from "../images/z12.jpg";
 
 
 

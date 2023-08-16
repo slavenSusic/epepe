@@ -1,4 +1,4 @@
-import logo from "/Asset-1.png";
+import logo from "../images/Asset-1.png";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "../hooks/use-media";

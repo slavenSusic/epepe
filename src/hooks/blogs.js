@@ -1,9 +1,9 @@
-import Blog1 from "/public/BlogSrestva.jpg";
-import Blog2 from "/public/BlogDosli.jpg";
-import Blog3 from "/public/BlogKako.jpg";
-import Blog4 from "/public/BlogMeta.jpg";
-import a1 from "/public/a1.jpg";
-import a2 from "/public/a2.jpg";
+import Blog1 from "../images/BlogSrestva.jpg";
+import Blog2 from "../images/BlogDosli.jpg";
+import Blog3 from "../images/BlogKako.jpg";
+import Blog4 from "../images/BlogMeta.jpg";
+import a1 from "../images/a1.jpg";
+import a2 from "../images/a2.jpg";
 
 export const blogContent= [
     {  id:1, authorPhoto:a1, author:"Jon Doe1",date:"12/06/2023", headline:'Bespovratna sredstva za digitalizaciju', src: Blog1, category:[ 'Marketing, ' ,
