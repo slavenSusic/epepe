@@ -1,4 +1,4 @@
-import aroma from "../images//aRoma.jpg";
+import aroma from "../images//aROMA.jpg";
 import AuroATM from "../images/AuroATM.jpg";
 import Bebolin from "../images/Bebolin.jpg";
 import auroDomus from "../images/auroDomus.jpg";
