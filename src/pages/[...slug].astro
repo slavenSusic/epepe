@@ -41,7 +41,7 @@ import mones3 from "../images/mones3.jpg";
 
 
 
-export async function getStaticPaths() {
+
   const pages = [
     {
       slug: undefined,
@@ -257,15 +257,11 @@ export async function getStaticPaths() {
       
     }
   ];
-  return pages.map(({ slug, title, text,pic,pic2,headline,category,client,design,strategy,pic3,task }) => {
-    return {
-      params: { slug },
-      props: { title, text,pic,headline,pic2,category,client,design,strategy,pic3,task },
-    };
-  });
-}
+  const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
 
-const { title, text,pic,pic2,category,headline,client,design,strategy,pic3,task } = Astro.props;
+const { title, text,pic,pic2,category,headline,client,design,strategy,pic3,task }  = page;
 ---
 <Layout {title}>
     <main class="  pl-5  md:flex  flex-row md:flex-cols justify-center items-start pt-52 ">
