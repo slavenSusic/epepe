@@ -192,14 +192,18 @@ function Navbar() {
       <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-20 2xl:top-20">
         <li className="top-5 hover:bg-gray-100 hover:text-red-400">
           
-          <a href="izrada-web-stranice">
-          <p className="text-xl"> Izrada web stranice</p></a>
+          <a href="/izrada-web-stranice">
+          <p className="text-xl"> Izrada web stranice</p>
+          </a>
         </li>
+        
         <li className="text-left  hover:bg-gray-100 hover:text-red-400">
-        <p className="text-xl"> Izrada web shopa </p>
+        <a href="izrada-web-shopa">
+        <p className="text-xl"> Izrada web shopa </p></a>
         </li>
         <li className="text-left pb-2 hover:bg-gray-100 hover:text-red-400">
-        <p className="text-xl"> Grafički dizajn</p> 
+          <a href="graficki-dizajn">
+        <p className="text-xl"> Grafički dizajn</p> </a>
         </li>
       </ul>
     </li>

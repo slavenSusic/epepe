@@ -5,7 +5,7 @@ pubDate: "2023-06-15"
 description: "This is the first post of my new Astro blog."
 author: "Tonka Mihelčić"
 image:
-  src: "/public/a1.jpg"
+  src: "https://epepe.hr/wp-content/uploads/2022/11/epepe_tonka-1-150x150.jpg"
   alt: "AuthorPic"
 tags: ["Marketing, ", " Uncategorized, ", "Web-stranice"]
 time: "6"

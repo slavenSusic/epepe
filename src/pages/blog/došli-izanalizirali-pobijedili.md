@@ -5,7 +5,7 @@ pubDate: "16/05/2023"
 description: "This is the first post of my new Astro blog."
 author: "Martina Milih Medić"
 image:
-  src: "/public/a2.jpg"
+  src: "https://epepe.hr/wp-content/uploads/2022/04/Martina-Milih-150x150.jpg"
   alt: "AuthorPic"
 tags: ["Marketing, ", "Web-stranice"]
 time: "6"

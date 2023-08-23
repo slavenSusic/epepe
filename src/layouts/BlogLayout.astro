@@ -57,7 +57,7 @@ console.log(frontmatter);
                 >
                     <img
                         src={frontmatter.image.src}
-                        alt=" "
+                        alt="Author"
                         class="rounded-full w-[100px] not-prose"
                     />
                     <div class="">
@@ -102,9 +102,9 @@ console.log(frontmatter);
                 </aside>
             </div>
         </div>
-        <div class="md:prose-xl lg:prose-2xl mx-10 ">
+        <div class="md:prose-xl lg:prose-2xl mx-12 2xl:mx-72">
 
-            <h2>Zadnje objave</h2>
+            <h2 class="font-bold text-xl py-10 2xl:text-2xl">Zadnje objave</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-[600px] ">
                 {
                     blogContent.slice(0, 2).map((item) => (
@@ -129,29 +129,29 @@ console.log(frontmatter);
                                         <img
                                             src={item.authorPhoto}
                                             alt=""
-                                            class="rounded-full w-[60px] max-w-xs"
+                                            class="rounded-full w-[40px] 2xl:w-[60px] max-w-xs"
                                         />
                                         <div class="ml-4 text-white">
-                                            <p class="text-sm md:text-base">
+                                            <p class="text-sm 2xl:text-base">
                                                 Posted by{" "}
-                                                <span class="font-bold text-sm md:text-base">
+                                                <span class="font-bold text-xs 2xl:text-base">
                                                     {item.author}
                                                 </span>
                                             </p>
-                                            <p class="text-sm md:text-base">{item.date}</p>
+                                            <p class="text-sm 2xl:text-base">{item.date}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-black flex flex-col items-start justify-between not-prose ">
-                                <div class="flex gap-1">
-                                    <p class="text-red-600 font-bold text-sm pt-3 xl:text-base whitespace-nowrap">
+                            <div class="text-black flex flex-col items-start justify-between not-prose flex-wrap ">
+                                <div class="flex gap-1 flex-wrap">
+                                    <p class="text-red-600 font-bold text-xs pt-3 2xl:text-base whitespace-nowrap flex-wrap">
                                         {item.category}
                                     </p>
-                                    <p class="text-sm pt-3 xl:text-base ">
+                                    <p class="text-xs pt-3 2xl:text-base ">
                                         &#x2022
                                     </p>
-                                    <p class="text-sm pt-3 xl:text-base whitespace-nowrap ">
+                                    <p class="text-xs pt-3 2xl:text-base whitespace-nowrap ">
                                         {item.time} minuta čitanja
                                     </p>
                                     

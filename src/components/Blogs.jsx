@@ -168,7 +168,7 @@ console.log(blogContent)
                 <div className="flex justify-start items-center duration-500 group-hover:translate-y-2 py-1">
                   <img
                     src={item.authorPhoto}
-                    alt=""
+                    alt="author1"
                     className="rounded-full w-1/4 max-w-xs"
                   />
                   <div className="ml-4 text-white">
