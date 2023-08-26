@@ -106,7 +106,10 @@ console.log(blogContent)
                       .toLowerCase()
                       .replace(/\s/g, "-")
                       .replaceAll(",", "")
-                      .replaceAll("!", "")}`}
+                      .replaceAll("ć", "c")
+                      .replaceAll("š", "s")
+                      .replaceAll("!", "")
+                       .replaceAll("?", "")}`}
                   >    <img
                 src={item.src}
                 alt="images"

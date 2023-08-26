@@ -202,9 +202,10 @@ module.exports = {
 					  marginBottom: '1.2rem',
 					},
 					p1: {
-						fontSize: '0.5em',
+						fontSize: '0.8em',
 					  marginTop: '1.25rem',
 					  marginBottom: '1.25rem',
+					  lineHeight: '2',
 					},
 					blockquote: {
 					  marginTop: '1.6rem',
@@ -551,7 +552,7 @@ module.exports = {
 				css: [
 				  {
 					fontSize: '1.23rem',
-					lineHeight: '1.78',
+					lineHeight: '1.3',
 					p: {
 					  marginTop: '1.33rem',
 					  marginBottom: '1.33rem',
@@ -561,6 +562,13 @@ module.exports = {
 					  lineHeight: '1.45',
 					  marginTop: '1.33rem',
 					  marginBottom: '1.33rem',
+					},
+					p1: {
+						fontSize: '0.8em',
+					  marginTop: '1.25rem',
+					  marginBottom: '1.25rem',
+					  lineHeight: '1.8',
+					  fontWeight:'400'
 					},
 					blockquote: {
 					  marginTop: '2.13rem',
@@ -574,7 +582,7 @@ module.exports = {
 					  lineHeight: '1',
 					},
 					h2: {
-					  fontSize: '1.58rem',
+					  fontSize: '1em',
 					  marginTop: '3.11rem',
 					  marginBottom: '1.78rem',
 					  lineHeight: '1.33',
@@ -753,13 +761,13 @@ module.exports = {
 					  lineHeight: '1',
 					},
 					h2: {
-					  fontSize: '1.5rem',
+					  fontSize: '2.5rem',
 					  marginTop: '3.6rem',
 					  marginBottom: '1rem',
 					  lineHeight: '1',
 					},
 					h3: {
-					  fontSize: '1.4rem',
+					  fontSize: '2.2rem',
 					  marginTop: '1.6rem',
 					  marginBottom: '0.8rem',
 					  lineHeight: '0.9',
@@ -908,7 +916,7 @@ module.exports = {
 				css: [
 				  {
 					
-					lineHeight: '1.67',
+					lineHeight: '1',
 					p: {
 					  fontSize: '1.5rem',
 					  marginTop: '1.6rem',
@@ -932,16 +940,16 @@ module.exports = {
 					  lineHeight: '1',
 					},
 					h2: {
-					  fontSize: '4.1rem',
+					  fontSize: '3.1rem',
 					  marginTop: '4.67rem',
 					  marginBottom: '3.33rem',
 					  lineHeight: '1.3',
 					},
 					h3: {
-					  fontSize: '2.6rem',
+					  fontSize: '2.5rem',
 					  marginTop: '2.67rem',
 					  marginBottom: '1.33rem',
-					  lineHeight: '1.33',
+					  lineHeight: '1.',
 					},
 					h4: {
 					  marginTop: '3.2rem',

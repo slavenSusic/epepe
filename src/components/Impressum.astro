@@ -1,0 +1,50 @@
+---
+import Footer from "./Footer.astro";
+
+import impressum from "../images/impressum.jpg"
+const footerText="Vrijeme je da prijeđemo na vas. Spremi za suradnju?"
+const  grayText="Ok, dosta o nama"
+---
+<article class=" relative prose-xl lg:prose-2xl  ">
+    <main class=" absolute top-20 w-full">
+        <section class=" md:pl-20  pl-5 2xl:pl-64 py-5 lg:w-1/2  md:w-3/4">
+        <h4 class="text-gray-800 font font-bold">epepe</h4>
+            <h1 class="font-bold lg:whitespace-pre">Impressum</h1>
+        </section>
+        <section class="py-10 px-10  md:flex md:items-center md:justify-center md:gap-5 bg-gray-100 2xl:px-10
+        lg:px-14 lg:justify-evenly  ">
+        <div class="xl:px-22">
+                        <h2 class="font-bold whitespace-nowrap prose-xl 2xl:prose-2xl pr-20 flex flex-col md:pr-10 xl:px-20">
+                                <span class="md:whitespace-pre-line lg:whitespace-normal">epepe
+            d.o.o.
+                                </h2>
+                            </div> 
+                                                <div class=" px-1 md:px-5 lg:px-18 py-2 md:border-l-2 block border-black prose-lg "> 
+                                                    <div class="flex flex-col">
+                                                    <p1 class="whitespace-pre-line">Žrtava fašizma 20
+                                51211, Matulji</p1>   
+                                                    <p1 class="whitespace-pre-line">Mail: info@epepe.hr
+                                Tel: +385 (51) 588 308 </p1> 
+                                                    <p1 class="whitespace-pre-line">OIB: 03362056222
+                                MBS: 04843568</p1> 
+                                                    <p1 class="whitespace-pre-line"><span class="whitespace-nowrap">IBAN: HR8724020061100858058</span>
+                                <span class="whitespace-nowrap">Erste&Steiermarkische Bank d.d.</span>
+                                Jadranski trg 3A, Rijeka</p1> 
+                                                    <p1 class="whitespace-pre-line"><span class="whitespace-nowrap">Upisano kod trgovačkog suda u Rijeci</span>
+                                <span class="whitespace-nowrap">Temeljni kapital: 20.000 kn, uplaćen u cijelosti</span></p1> 
+                                                    <p1>Član uprave društva: Davor Žic</p1> 
+                                                </div>
+           
+            </section>
+
+            
+        </section>
+           
+            <Footer footer={impressum}
+            footerText={footerText}
+            grayText={grayText}/>
+        </main>
+   
+      
+    </article>
+    
