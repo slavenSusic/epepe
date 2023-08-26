@@ -61,8 +61,9 @@ console.log(blogContent)
 
   
 <div className='mt-56 flex items-end gap-5 justify-between mr-40 py-2'>
-<section className="lg:pl-40 pt-60 hidden md:block prose-2xl">
-        <h1 className="text-gray-800 lg:text-7xl font font-bold">Blog</h1>
+<section className="pl-[60px] pt-[250px] md:pt-[250px]  prose-2xl">
+ 
+        <h1 className="text-gray-800 lg:text-7xl hidden md:block font font-bold">Blog</h1>
         
       </section>
      
@@ -72,7 +73,7 @@ console.log(blogContent)
 
 
 </div>
-<div className="flex items-center gap-3 justify-end pr-40">
+<div className="flex items-center gap-3 justify-end md:pr-40">
 <p>Showing {filteredItems.length} of {blogContent.length}</p>
 <select onChange={handleFilter}>
          <option value="all"
@@ -96,7 +97,7 @@ console.log(blogContent)
         
         </select>
         </div>
-      <div className="grid pt-44 md:pt-2 px-10 gap-y-20 md:mx-40 grid-cols-1 lg:grid-cols-2 py-20">
+      <div className="grid  md:pt-2 gap-y-20 md:mx-40 grid-cols-1 lg:grid-cols-2 py-20">
         
         {filteredItems.map((item) => (
           <div key={item.id} className="relative group">
@@ -126,7 +127,7 @@ console.log(blogContent)
                   </p>
                 </div>
                 <div>
-                  <h2 className="font-bold sm:text-lg xl:text-4xl">
+                  <h2 className="font-bold sm:text-lg 2xl:text-4xl">
                     {item.headline}
                   </h2>
                   <p>{item.par}</p>
@@ -135,7 +136,10 @@ console.log(blogContent)
                       .toLowerCase()
                       .replace(/\s/g, "-")
                       .replaceAll(",", "")
-                      .replaceAll("!", "")}`}
+                      .replaceAll("ć", "c")
+                      .replaceAll("š", "s")
+                      .replaceAll("!", "")
+                       .replaceAll("?", "")}`}
                   >
                     <div
                       className="flex group items-center"
