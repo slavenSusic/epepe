@@ -59,7 +59,7 @@ function Portfolios() {
           <div key={item.id} className='relative group '>
             <img src={item.src} alt='' className='h-full' />
             <a href={`project/${item.name.toLowerCase().replace(/\s/g, '-')}`}>
-              <div className='w-full h-full hover:bg-black/30 z-20 absolute top-10 transition-all duration-500'>
+              <div className='w-full h-full hover:bg-black/30 z-20 absolute top-6 transition-all duration-500'>
                 <p className='z-10 text-white text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100'>
                   {item.name}
                 </p>
