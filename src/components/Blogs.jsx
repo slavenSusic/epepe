@@ -63,7 +63,7 @@ console.log(blogContent)
 <div className='mt-56 flex items-end gap-5 justify-between mr-40 py-2'>
 <section className="pl-[60px] pt-[250px] md:pt-[250px]  prose-2xl">
  
-        <h1 className="text-gray-800 lg:text-7xl hidden md:block font font-bold">Blog</h1>
+        <h1 className="text-gray-800 lg:text-7xl hidden md:block font font-bold pl-28 pb-10">Blog</h1>
         
       </section>
      

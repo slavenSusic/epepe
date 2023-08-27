@@ -301,16 +301,24 @@ function Navbar() {
                     } rounded-lg w-52 space-y-3 cursor-pointer text-sm bg-white`}
                   >
                     <li className="text-left pl-3 pt-3 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/google-ads">
                       Google Ads
+                      </a>
                     </li>
                     <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/facebook-oglasavanje">
                       Facebook oglašavanje
+                      </a>
                     </li>
                     <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/viber-oglasavanje">
                       Viber oglašavanje
+                      </a>
                     </li>
                     <li className="text-left pl-3 pb-3 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/content-marketing">
                       Content marketing
+                      </a>
                     </li>
                   </ul>
                 </li>
@@ -343,10 +351,14 @@ function Navbar() {
                     } w-36 text-sm rounded-lg space-y-3 cursor-pointer bg-white`}
                   >
                     <li className="text-left pl-3 pt-3 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/vodenje-facebook-stranice">
                       Vođenje Facebook stranice
+                      </a>
                     </li>
                     <li className="text-left pl-3 pb-2 hover:bg-gray-100 hover:text-red-400">
+                    <a className="active:text-red-600 " href="/vodenje-instagram-profila">
                       Vođenje Instagram profila
+                      </a>
                     </li>
                   </ul>
                 </li>
@@ -355,7 +367,7 @@ function Navbar() {
                     className="flex justify-between items-center gap-2"
                     onClick={() => handleAccordionClick(3)}
                   >
-                    <a href="#">Web &amp; Design</a>
+                    <a href="web-i-desing">Web &amp; Design</a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
