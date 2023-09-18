@@ -37,7 +37,7 @@ function Navbar() {
       }`}
     >
       {/* LIJEVO */}
-<div className=" pl-10 flex justify-between items-center">
+<div className=" md:pl-10 flex justify-between items-center">
   <div className="flex items-center gap-3 pb-10">
     <button
       type="button"
@@ -63,7 +63,7 @@ function Navbar() {
     </button>
     <div>
       <a href="/">
-        <img src={logo} alt="logo" className="m-5 md:m-0 w-1/2 xl:w-3/4 xl:h-3/4" />
+        <img src={logo} alt="logo" className="m-5 md:m-0 w-1/2 lg:w-1/2 lg:h-1/2" />
       </a>
     </div>
   </div>
@@ -93,13 +93,13 @@ function Navbar() {
   </div>
 </div>
 {/* DESNO */}
-<div className="mt-10 mr-20  hidden md:block">
-  <ul className="font-semibold flex gap-10  justify-center overflow-visible h-20">
+<div className="mt-5  hidden md:block">
+  <ul className="font-semibold flex gap-10  justify-center overflow-visible h-10">
     <li className="flex flex-col items-end group whitespace-nowrap ">
       <span className="text-xs">01</span>
       <div className="flex items-center gap-2">
         <a className="active:text-red-600 " href="/digitalno-oglasavanje">
-          <p className=" text-base lg:text-xl hover:text-red-500 transition duration-200 ease-in-out">Digitalno oglašavanje</p>
+          <p className=" text-base  hover:text-red-500 transition duration-200 ease-in-out">Digitalno oglašavanje</p>
         </a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -119,20 +119,20 @@ function Navbar() {
       <ul className="mt-3   p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-20 2xl:top-20">
       <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
         <a href="/google-ads">
-        <p className="text-xl">Google Ads</p></a>
+        <p className="">Google Ads</p></a>
         </li>
         <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
           <a href="/facebook-oglasavanje">
-          <p className="text-xl">Facebook oglašavanje</p></a>
+          <p className="">Facebook oglašavanje</p></a>
         </li>
         <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
         <a href="/viber-oglasavanje">
-        <p className="text-xl">Viber oglašavanje</p></a>
+        <p className="">Viber oglašavanje</p></a>
         </li>
         <li className="text-left pl-3 pb-3 hover:bg-gray-100 hover:text-red-400">
          
           <a href="/content-marketing">
-          <p className="text-xl">Content marketing</p></a>
+          <p className="">Content marketing</p></a>
         </li>
       </ul>
     </li>
@@ -140,7 +140,7 @@ function Navbar() {
       <span className="text-xs">02</span>
       <div className="flex items-center gap-2">
         <a href="drustvene-mreze">
-        <p className="text-base lg:text-xl hover:text-red-500 transition duration-200 ease-in-out">
+        <p className="text-base  hover:text-red-500 transition duration-200 ease-in-out">
           Društvene mreže</p></a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -160,12 +160,12 @@ function Navbar() {
       <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute transition duration-200 ease-in-out shadow-2xl  top-20 2xl:top-20">
         <li className=" pt-3 hover:bg-gray-100 hover:text-red-400">
          <a href="vodenje-facebook-stranice">
-          <p className="text-xl">Vođenje Facebook <br /> stranice</p> </a>
+          <p className="">Vođenje Facebook <br /> stranice</p> </a>
         </li>
         <li className=" pb-2 hover:bg-gray-100 hover:text-red-400">
           
           <a href="vodenje-instagram-profila">
-          <p className="text-xl">Vođenje Instagram <br/> profila</p></a>
+          <p className="">Vođenje Instagram <br/> profila</p></a>
         </li>
       </ul>
     </li>
@@ -173,7 +173,7 @@ function Navbar() {
       <span className="text-xs">03</span>
       <div className="flex items-center gap-2">
         <a href="web-i-desing">
-        <p className="text-base lg:text-xl hover:text-red-500 transition duration-200 ease-in-out">Web &amp; Design</p></a>
+        <p className="text-base hover:text-red-500 transition duration-200 ease-in-out">Web &amp; Design</p></a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -193,17 +193,17 @@ function Navbar() {
         <li className="top-5 hover:bg-gray-100 hover:text-red-400">
           
           <a href="/izrada-web-stranice">
-          <p className="text-xl"> Izrada web stranice</p>
+          <p className=""> Izrada web stranice</p>
           </a>
         </li>
         
         <li className="text-left  hover:bg-gray-100 hover:text-red-400">
         <a href="izrada-web-shopa">
-        <p className="text-xl"> Izrada web shopa </p></a>
+        <p className=""> Izrada web shopa </p></a>
         </li>
         <li className="text-left pb-2 hover:bg-gray-100 hover:text-red-400">
           <a href="graficki-dizajn">
-        <p className="text-xl"> Grafički dizajn</p> </a>
+        <p className=""> Grafički dizajn</p> </a>
         </li>
       </ul>
     </li>

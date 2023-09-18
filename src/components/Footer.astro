@@ -3,34 +3,34 @@ const {footer,footerText,grayText}=Astro.props
 ---
 
 
-<main class="flex flex-col">
+<main class="flex flex-col non-prose">
 
 	<div class="-mb-20" >
 		<img src={footer} alt="baner"
 		class="object-cover h-[600px] lg:h-[1000px] w-full ">
 		
 	</div>
-<div class="bg-black  md:px-20">
-<p class="text-gray-500 pt-32 md:pt-20 -mt-20 font-bold pl-5 md:pl-20 ">
+<div class="bg-black  md:px-10">
+<p class="text-gray-500 pt-32 md:pt-20 -mt-20 font-bold pl-14 md:pl-20 ">
 	{grayText}
 </p>
-<div class="grid grid-cols-1 gap-20 items-center md:grid-cols-4 mt-1 justify-between py-10">
-<h3 class="col-span-3 text-white font-bold w-3/4 pl-5 md:pl-20 ">
+<div class="grid grid-cols-1 gap-5 items-center md:grid-cols-4 mt-1 justify-between py-10">
+<h3 class="col-span-3 text-white font-bold xl:w-3/4 pl-14 md:pl-10 xl:pl-20 ">
 {footerText}
 </h3>
-<span >
-<button class="bg-red-500 py-4 px-6 text-white rounded-lg lg:text-base font-bold">
+<div class="pl-14 md:pl-0" >
+<button class="bg-red-700  text-sm py-4 px-8 whitespace-nowrap text-white rounded-lg lg:text-base font-bold">
 Kontaktirajte nas  &rarr;
 </button>
-</span>
+</div>
 
 </div>
 </div>
-<div class="bg-black/90 flex flex-wrap justify-between px-20 text-white">
-	<p>
+<div class="bg-black/90 flex flex-wrap justify-between px-5 2xl:px-20 text-white  ">
+	<p class="text-sm md:text-base">
 		© <span id="year"></span> epepe.d.o.o
 	</p>
-	<p >
+	<p class="text-sm md:text-base whitespace-nowrap">
 		<a href="/impressum"><span class="hover:text-red-500">Impressum</a></span class="hover:text-red-500"></span>  | <span class="hover:text-red-500">Politike privatnosti </span> | <span class="hover:text-red-500"><a href="/o-kolacicima">O kolačićima</a></span> 
 	</p>
 

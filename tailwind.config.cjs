@@ -934,7 +934,7 @@ module.exports = {
 					  paddingLeft: '1.33rem',
 					},
 					h1: {
-					  fontSize: '4.5rem',
+					  fontSize: '4.0rem',
 					  marginTop: '0',
 					  marginBottom: '3rem',
 					  lineHeight: '1',
