@@ -1,0 +1,6 @@
+body {
+    --swup-fade-theme-duration: 1.4s;
+  }
+  .header .menu-wrapper .menu > li > a {
+    text-transform: lowercase !important;
+}

@@ -1,0 +1,301 @@
+---
+
+import Footer from "../components/Footer.astro";
+import MiniFooter from "../components/MiniFooter.astro";
+import Layout from "../layouts/Layout.astro";
+import vitoCozaMob1 from "../images/vitoCozaMob1.jpg";
+import vitoCozaMob2 from "../images/vitoCozaMob2.jpg";
+
+import tzop1 from "../images/tzop1.jpg";
+import tzop2 from "../images/tzop2.jpg";
+import tzop3 from "../images/tzop3.jpg";
+import bitoraj2 from "../images/Bitoraj1.jpg";
+import bitoraj3 from "../images/Bitoraj2.jpg";
+import bitoraj4 from "../images/Bitoraj3.jpg";
+import pharma1 from "../images/pharma1.jpg";
+import pharma2 from "../images/pharma2.jpg";
+import aroma1 from "../images/aroma1.jpg";
+import aroma2 from "../images/aroma2.jpg";
+import auroatm1 from "../images/auroatm1.jpg";
+import auroatm2 from "../images/auroatm2.jpg";
+import auroatm3 from "../images/auroatm3.jpg";
+import bebolin1 from "../images/bebolin1.jpg";
+import bebolin2 from "../images/bebolin2.jpg";
+import ad1 from "../images/ad1.jpg";
+import ad2 from "../images/ad2.jpg";
+import ad3 from "../images/ad3.jpg";
+import benin1 from "../images/benin1.jpg";
+import benin2 from "../images/benin2.jpg";
+import cat1 from "../images/catamaran1.jpg";
+import cat2 from "../images/catamaran2.jpg";
+import draga1 from "../images/draga1.jpg";
+import draga2 from "../images/draga2.jpg";
+import inter1 from "../images/inter1.jpg";
+import inter2 from "../images/inter2.jpg";
+import inter3 from "../images/inter3.jpg";
+import mones1 from "../images/mones1.jpg";
+import mones2 from "../images/mones2.jpg";
+import mones3 from "../images/mones3.jpg";
+
+
+
+
+
+
+  const pages = [
+    {
+      slug: undefined,
+      title: "Astro Store",
+      text: "Welcome to the Astro store!",
+    },
+ 
+    {
+      slug: "project/vito-coza",
+      category:"Društvene mreže",
+      title: "Vito Ćoza",
+      headline:"Vito Ćoza",
+      text: "Naš zadatak bio je stvoriti online prisutnost koja će održavati uzbuđenje, strast i postignuća Vita u natjecanjima. Kroz strategijsko planiranje, kreativno stvaranje sadržaja i aktivno upravljanje društvenim mrežama, uspjeli smo izgraditi angažiranu zajednicu ljubitelja kartinga i pratitelja koji podržavaju Vitinu karijeru. Naša suradnja s Vitom Ćozom ističe se po postizanju izvanrednih rezultata, uključujući povećanje broja pratitelja, angažmana korisnika, te promocije natjecanja i dostignuća. Kroz vizualno privlačne sadržaje, videozapise, intervjue i priče iz kulisa, uspjeli smo prenijeti uzbuđenje karting utrka na društvene mreže i povećati svijest o Vita Ćozi kao obećavajućem mladom vozaču. Naša strast za motorsportom i kreativnim digitalnim rješenjima omogućila je da Vitin talenat i ambicija budu prepoznati širom svijeta.",
+    pic:vitoCozaMob1,
+    pic2:vitoCozaMob2,
+    client:'Vito Ćoza',
+    design:'',
+    strategy:''
+    },
+
+    {
+      slug: "project/turisticka-zajednica-opatija",
+      category:"Društvene mreže",
+      title: "Turistička zajednica Opatija",
+      headline:"Turistička zajednica Opatija",
+      text: "Naš zadatak bio je stvoriti online prisutnost koja će odražavati bogatstvo prirodnih ljepota, kulturne baštine i turističkih aktivnosti koje Opatija nudi. Kroz strateško planiranje, kreativno stvaranje sadržaja i aktivno upravljanje društvenim mrežama, uspjeli smo izgraditi snažnu i angažiranu zajednicu ljubitelja Opatije. Naša suradnja s Turističkom zajednicom Opatija ističe se po postizanju izvanrednih rezultata, uključujući rast broja pratitelja, angažman korisnika, kao i povećanje interakcije i promocije događaja, atrakcija, smještaja i gastronomije Opatije. Naša strast za turizmom i marketinškim inovacijama omogućila je da se Turistička zajednica Opatija istakne kao neodoljiva destinacija za posjetitelje.",
+    pic:tzop1,
+    pic2:tzop2,
+    pic3:tzop3,
+    client:'Turistička zajednica Opatija',
+    design:'',
+    strategy:''
+    },
+    {
+      slug: "project/hotel-bitoraj-fuzine",
+      category:"Društvene mreže",
+      title: "Hotel ‘Bitoraj’ Fužine",
+      headline:"Hotel ‘Bitoraj’ Fužine",
+      text: "Kao stručnjaci za društvene medije, posvetili smo se stvaranju online prisutnosti koja odražava jedinstvenu ljepotu i kvalitetu ponude restorana i hotela Bitoraj. Naš zadatak bio je predstaviti bogatstvo gastronomije, udobnost smještaja i prekrasne prirodne ljepote tog područja putem društvenih mreža. Kroz planiranje, kreativno stvaranje sadržaja i aktivno upravljanje društvenim mrežama, uspjeli smo privući pažnju lokalnih stanovnika, turista i ljubitelja dobre hrane. Naša strateška implementacija ciljanih marketinških kampanja, kvalitetni vizualni sadržaji, informacije o jelovnicima, posebnim ponudama i aktivnostima u okolini, rezultirali su povećanjem angažmana, broja pratitelja i rezervacija u restoranu i hotelu Bitoraj. Naša uspješna suradnja s restoranom i hotelom Bitoraj svjedoči o našoj sposobnosti pružanja vrhunskih usluga upravljanja društvenim mrežama koje donose stvarnu vrijednost, promoviraju jedinstvenu ponudu i ostvaruju konkretne poslovne rezultate.",
+    pic:bitoraj2,
+    pic2:bitoraj3,
+    pic3:bitoraj4,
+    task:'',
+    client:'Bitoraj',
+    design:'',
+    strategy:''
+    },
+    {
+      slug: "project/pharma-celsius",
+      category:"Web",
+      title: "Pharma celsius",
+      headline:"Pharma celsius",
+      text: "Naš cilj bio je stvoriti modernu, funkcionalnu i informativnu web stranicu koja odražava profesionalnost i stručnost Pharmacelsiusa u osiguravanju optimalnih uvjeta okoline za farmaceutske proizvode. Kroz pažljivo dizajniranje i izgradnju, kreirali smo online platformu koja pruža korisnicima brzi pristup informacijama o njihovim inovativnim sustavima nadzora temperature i vlage.Web stranica sadrži detaljne informacije o svakom proizvodu, uz naglasak na njihove značajke, prednosti i primjenu u farmaceutskoj industriji. Korisnicima omogućujemo jednostavan pristup tehničkim specifikacijama, certifikatima i referencama, kako bi dobili cjelovitu sliku o visokoj kvaliteti proizvoda koje Pharmacelsius nudi.",
+    task:"Stvoriti vizualno atraktivnu, funkcionalnu i informativnu web stranicu",
+    pic:pharma1,
+    pic2:pharma2,
+  
+    client:'Pharma celsius',
+    design:'UI / UX Design',
+    strategy:'Web dizajn, Grafička obrada'
+    },
+    {
+      slug: "project/aroma",
+      category:"Društvene mreže ",
+      title: "aRoma",
+      headline:"aRoma",
+      text: "Naš tim stručnjaka za društvene medije posvetio se izgradnji snažne online prisutnosti tvrtke kroz strategijsko planiranje, kreativno stvaranje sadržaja i učinkovito upravljanje društvenim mrežama. Kroz pažljivo proučavanje ciljne publike tvrtke “aRoma”, osmislili smo ciljane marketinške kampanje koje su privlačile i angažirale korisnike na platformama poput Facebooka, Instagrama i Linkedinu. Naša stručnost u analizi podataka omogućila nam je praćenje uspješnosti kampanja i prilagodbu strategija kako bismo postizali maksimalne rezultate. Kroz kvalitetan sadržaj, interakciju s korisnicima, upravljanje reputacijom i redovito ažuriranje sadržaja, doprinijeli smo izgradnji branda “aRoma” kao pouzdanog i privlačnog igrača u industriji. Naša uspješna suradnja s tvrtkom “aRoma” dokazuje našu sposobnost pružanja cjelovitih usluga upravljanja društvenim mrežama koje stvaraju vrijednost i postižu konkretne poslovne rezultate.",
+    pic:aroma1,
+    pic2:aroma2,
+  
+    client:'aRoma',
+    design:'',
+    strategy:''
+    },
+    {
+      slug: "project/auroatm",
+      category:"Web Design  ",
+      title: "Auro domus Atm",
+      headline:"Auro domus Atm",
+      text: "Predstavljamo vam novu web stranicu Auro domus ATM-a – vodeće hrvatske kompanije specijalizirane za trgovinu plemenitim metalima, valutama i uslugu podizanja gotovog novca na najvećoj nezavisnoj bankomatskoj mreži u Hrvatskoj.Naša agencija je s entuzijazmom radila na redizajnu web stranice, fokusirajući se na moderni i responzivni dizajn koji pruža vrhunsko iskustvo korisnicima na svim uređajima. Nudimo intuitivno korisničko sučelje i optimizirane informacije, prilagođene potrebama i očekivanjima naših posjetitelja.Na novoj web stranici možete jednostavno pristupiti informacijama o našoj širokoj ponudi plemenitih metala i valuta, kao i saznati najnovije cijene. Također vam omogućujemo brzo i sigurno podizanje gotovine na našoj bankomatskoj mreži koja je najveća u Hrvatskoj.Naša misija je pružiti personalizirano iskustvo korisnicima, uz naglasak na jednostavnost navigacije i brz pristup relevantnim informacijama. Svakom posjetitelju želimo pružiti profesionalnost i pouzdanost koje očekuju od najveće kompanije u industriji trgovine plemenitim metalima i valutama.Istražite našu novu web stranicu i iskoristite prednosti koje nudi Auro domus ATM. Jamčimo kvalitetnu uslugu prilagođenu vašim potrebama i ciljevima.",
+    pic:auroatm1,
+    pic2:auroatm2,
+    pic3:auroatm3,
+  
+    client:'Auro Domus d.o.o.',
+    design:'UI / UX Design',
+    strategy:'Web dizajn, Grafička obrada'
+    },
+    {
+      slug: "project/bebolin",
+      category:"Društvene mreže ",
+      title: "Bebolin",
+      headline:"Bebolin",
+      text: "Naš stručni tim za društvene medije posvetio se izgradnji snažne online prisutnosti tvrtke kroz strategijsko planiranje, kreativno stvaranje sadržaja i učinkovito upravljanje društvenim mrežama. Uz fokus na roditelje i skrbnike djece kao ciljnu publiku, osmislili smo ciljane marketinške kampanje koje su privlačile njihovu pažnju, poticali interakciju te potvrđivali “Bebolin” kao pouzdan izvor kvalitetnih proizvoda i usluga. Kroz vizualno atraktivne objave, korisne savjete o roditeljstvu, informacije o posebnim ponudama i promocijama, uspjeli smo izgraditi prepoznatljivost branda “Bebolin” te potaknuti angažman korisnika na društvenim mrežama. Aktivna interakcija s korisnicima, brzo odgovaranje na upite, dijeljenje korisnih informacija i redovito ažuriranje sadržaja bili su ključni faktori koji su doprinijeli izgradnji povjerenja i lojalnosti prema brandu. Naša uspješna suradnja s tvrtkom “Bebolin” potvrđuje našu sposobnost pružanja kvalitetnih usluga upravljanja društvenim mrežama koje generiraju povećanje prometa, rast broja lojalnih korisnika i ostvarivanje konkretne poslovne vrijednosti.",
+    pic:bebolin1,
+    pic2:bebolin2,
+  
+    client:'Bebolin',
+    design:'',
+    strategy:''
+    },
+    {
+    slug: "project/auro-domus",
+      category:"Društvene mreže ",
+      title: "Auro domus",
+      headline:"Auro domus",
+      text: "Kao stručnjaci za društvene medije, angažirali smo se na izgradnji snažne online prisutnosti tvrtke kroz taktičko planiranje, stvaranje relevantnog sadržaja i efikasno upravljanje društvenim mrežama. Fokusirali smo se na razumijevanje ciljne publike tvrtke “Auro domus” kako bismo kreirali ciljane marketinške kampanje koje su privlačile i angažirale korisnike na različitim platformama kao što su Facebook, Instagram i LinkedIn. Uz pažljivu analizu podataka, pratili smo uspješnost kampanja i prilagođavali strategije kako bismo postigli maksimalne rezultate. Kroz izradu kvalitetnog sadržaja, vizualno privlačnih objava, aktivnu interakciju s korisnicima i redovno ažuriranje sadržaja, doprinijeli smo izgradnji prepoznatljivosti branda “Auro domus” kao vodećeg igrača u industriji. Naša uspješna suradnja s tvrtkom “Auro domus” svjedoči o našoj sposobnosti pružanja cjelovitih usluga vođenja društvenih mreža koje donose stvarnu vrijednost, povećavaju angažman korisnika i ostvaruju mjerljive poslovne rezultate.",
+    pic:ad1,
+    pic2:ad2,
+    pic3:ad3,
+  
+    client:'Auro domus',
+    design:'',
+    strategy:''
+    },
+    {
+    slug: "project/benin-coffee",
+      category:"Društvene mreže ",
+      title: "Benin coffee",
+      headline:"Benin coffee",
+      text: "Kao stručnjaci za društvene medije, posvetili smo se izgradnji snažne online prisutnosti tvrtke kroz kreativno stvaranje sadržaja i učinkovito upravljanje društvenim mrežama. Fokusirali smo se na ciljnu publiku tvrtke “Benin” – ljubitelje kave i kulturu kave – kako bismo kreirali ciljane marketinške kampanje koje su privlačile pažnju i poticale korisnike na angažman s brandom. Kroz vizualno privlačne objave, informacije o različitim vrstama kave, recepte za pripremu kave, priče o porijeklu kave i razmjenu mišljenja o omiljenim okusima, uspjeli smo izgraditi zajednicu strastvenih kavoljubaca. Aktivno smo komunicirali s korisnicima, odgovarali na upite, dijelili inspirativne sadržaje te pratili trendove u industriji kako bismo održali relevantnost i privukli nove korisnike. Naša uspješna suradnja s tvrtkom “Benin” svjedoči o našoj sposobnosti pružanja kvalitetnih usluga upravljanja društvenim mrežama koje stvaraju vrijednost, povećavaju angažman korisnika i ostvaruju mjerljive poslovne rezultate.",
+    pic:benin1,
+    pic2:benin2,
+
+  
+    client:'Benin coffee',
+    design:'',
+    strategy:''
+    },  
+
+    {
+    slug: "project/hotel-bitoraj",
+      category:"Web Design ",
+      title: "Hotel ‘Bitoraj’ Fužine",
+      headline:"Hotel ‘Bitoraj’ Fužine",
+      text: "Naš cilj bio je stvoriti vizualno atraktivnu, funkcionalnu i informativnu web stranicu koja će odražavati identitet i karakter restorana i hotela Bitoraj, privlačiti posjetitelje te pružati korisne informacije o jelovniku, uslugama i lokaciji.Dizajn je ključan element u privlačenju korisnika na web stranici, stoga smo pažljivo osmislili modernu i elegantnu estetiku koja savršeno odražava toplu atmosferu i autentičnost restorana i hotela Bitoraj. Kombinacija bogatih boja, kvalitetnih fotografija jela i ambijenta, te jednostavnog i intuitivnog korisničkog sučelja stvorila je vizualni identitet koji privlači posjetitelje i pobuđuje njihovu želju za posjetom.Struktura i funkcionalnost web stranice su pažljivo planirane kako bi korisnicima pružili sve potrebne informacije na jednostavan i brz način. Početna stranica dočekuje posjetitelje s izazovnim vizualima hrane i atmosfere restorana, ističući ključne usluge i ponude. Navigacija je jasna i intuitivna, omogućavajući korisnicima brzo pronalaženje željenih informacija o jelovniku, ponudama, rezervacijama i kontaktu.",
+    pic:bitoraj2,
+    pic2:bitoraj2,
+    pic3:bitoraj3,
+
+  
+    client:'Hotel bitoraj',
+    design:'',
+    strategy:''
+    }, 
+    {
+    slug: "project/catamaran-yachting",
+      category:"Web Design ",
+      title: "Catamaran Yachting",
+      headline:"Catamaran Yachting",
+      text: "",
+    pic:cat1,
+    pic2:cat2,
+
+  task:"Izrada funkcionalne i responzivne web stranice",
+    client:'Catamaran Yachting',
+    design:'UX / UI Design',
+    strategy:'Web dizajn, Grafička obrada'
+    }, 
+    {
+    slug: "project/draga-moja",
+      category:"Web Design ",
+      title: "Draga moja",
+      headline:"Draga moja",
+      text: "",
+    pic:draga1,
+    pic2:draga2,
+
+  task:"Izrada funkcionalne i responzivne web stranice",
+    client:'Draga moja',
+    design:'',
+    strategy:''
+    }, 
+    {
+    slug: "project/interstroj",
+      category:"Web Design ",
+      title: "Interstroj",
+      headline:"Interstroj",
+      text: "Naša vizija bila je stvoriti funkcionalnu i informativnu web stranicu koja korisnicima omogućuje jednostavan pristup uslugama i informacijama o servisiranju građevinskih strojeva. Kroz profinjen dizajn i intuitivno korisničko sučelje, predstavili smo širok spektar usluga popravka, održavanja, dijagnostike i rezervnih dijelova. Također smo olakšali korisnicima kontakt s tvrtkom putem jasno istaknutih kontaktnih podataka, pružajući podršku i odgovore na njihove upite. Naša web stranica odražava pouzdanost i stručnost Interstroja, pružajući korisnicima povjerenje i kvalitetnu uslugu servisiranja građevinskih strojeva.",
+    pic:inter1,
+    pic2:inter2,
+    pic3:inter3,
+
+  task:"Izrada nove web stranice, fokusirana na pružanje informacija o uslugama servisiranja građevinskih strojeva",
+    client:'Interstroj',
+    design:'UI / UX Design',
+    strategy:'Web dizajn, Grafička obrada'
+    }, 
+    {
+    slug: "project/monestiq",
+      category:"Web Design ",
+      title: "Monestiq",
+      headline:"Monestiq",
+      text: "Naš tim je marljivo radio kako bi stvorio suvremen dizajn koji odražava pouzdanost i profesionalnost tvrtke, istovremeno pružajući intuitivno korisničko iskustvo. Kroz strukturiranu organizaciju sadržaja, posjetitelji web stranice mogu lako pronaći informacije o različitim financijskim proizvodima i uslugama koje Monestiq nudi. S posebnim naglaskom na podršku klijentima, osigurali smo da kontaktne informacije budu dostupne i omogućili korisnicima da jednostavno postave upite. Naša web stranica za Monestiq pruža kvalitetan digitalni dojam tvrtke, jačajući njihovu reputaciju kao pouzdanog partnera za financijske usluge.",
+    pic:mones1,
+    pic2:mones2,
+    pic3:mones3,
+
+  task:"Izrada funkcionalne i responzivne web stranice",
+    client:'Monestiq',
+    design:'UI / UX Design',
+    strategy:'Web dizajn, Grafička obrada'
+    }, 
+
+
+
+
+
+    {
+    slug: "project/auro-domuasds",
+      title: "The ultimate Astro handbook",
+      text: "If you want to learn Astro, you must read this book.",
+      
+    }
+  ];
+  const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
+
+const { title, text,pic,pic2,category,headline,client,design,strategy,pic3,task }  = page;
+---
+<Layout {title}>
+    <main class="  pl-5  md:flex  flex-row md:flex-cols justify-center items-start pt-52 ">
+      
+    <aside class=" md:w-1/2   lg:p-0 " >
+      <a href="/portfolio"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+      </svg>
+      </a>  
+        <img src={pic} alt="" class="py-5">
+        <img src={pic2} alt="" class="py-5">
+        <img src={pic3} alt="" class="py-5">
+    </aside>
+    <div class="flex sticky prose prose-xl 2xl:prose-2xl top-0 flex-col lg:pt-32 lg:pl-10 md:px-10 xl:pl-20 xl:pr-64 text-left md:w-1/2  ">
+    <p class="font-semibold p-0">{category}</p> 
+   <h1 class="font-bold">{headline}</h1> 
+   <p2 class=" font-2xl ">{text}</p2>
+   {task && <p2 class="flex flex-col"><span class="font-bold">Task</span><span>{task}</span></p2>}
+   <div class="flex gap-3">
+ 
+    
+    {client && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Client</span><span>{client}</span></p2>}
+    {design && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Design</span><span>{design}</span></p2>}
+    {strategy && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Strategy</span><span>{strategy}</span></p2>}
+   
+   </div>
+    </div>
+   
+</main>
+<MiniFooter 
+footerText={"Važno je tko Vam vodi društvene mreže. Prepustite nam se s povjerenjem i uživajte u rezultatima!"}
+
+grayText={"Što sad?"}
+
+/>
+    
+</>

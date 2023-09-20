@@ -1,0 +1,81 @@
+---
+import Navbar from "../components/Navbar";
+import FooterLine from "../components/FooterLine.astro";
+import 'astro-breadcrumbs/breadcrumbs.css';
+import { Breadcrumbs } from "astro-breadcrumbs";
+const { title } = Astro.props;
+const { frontmatter } = Astro.props;
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <div class="">
+        
+        
+         </div>
+        <title>{frontmatter.title}</title>
+    </head>
+    <body class="relative">
+        <div class="fixed top-0 left-0 z-50 w-full">
+            <Navbar client:load />
+        </div>
+<main>
+    <div class="pt-48 prose-sm lg:prose-2xl md:mx-20">
+        <div class="pl-5 lg:pl-10">
+            
+            <h1 class="font-extrabold">Politika kolačića</h1>
+            <div class="font-bold">
+                    <Breadcrumbs >
+                <svg
+                slot="separator"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </Breadcrumbs>
+            </div>
+            <div class="flex flex-col lg:flex-row-reverse mx-5 gap-10">
+                <div class="w-full">
+                    <slot />
+                </div>
+                
+            </div>
+        </div> 
+           
+    
+                   
+    </main>
+</div>
+<div class="pt-64 w-full px-0 m-0">
+
+    <FooterLine/>
+</div>
+
+
+
+        <style></style>
+        <script type="module" src="../js/app.js"></script>
+    </body>
+</html>

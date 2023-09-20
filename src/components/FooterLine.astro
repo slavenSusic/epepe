@@ -1,0 +1,18 @@
+---
+const {footerText,grayText}=Astro.props
+---
+
+<div class="bg-black/90 flex flex-wrap py-5 justify-between px-20 text-white">
+	<p>
+		© <span id="year"></span> epepe.d.o.o
+	</p>
+	<p >
+		<a href="/impressum"><span class="hover:text-red-500">Impressum</a></span class="hover:text-red-500"></span>  | <span class="hover:text-red-500">Politike privatnosti </span> | <span class="hover:text-red-500"><a href="/o-kolacicima">O kolačićima</a></span> 
+	</p>
+
+</div>
+</main>
+<script>
+	document.querySelector('#year').textContent= new Date().getFullYear().toString()
+
+</script>

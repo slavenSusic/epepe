@@ -1,0 +1,187 @@
+---
+import Navbar from "../components/Navbar";
+import facebook from "../images/fbicon.svg";
+import twitter from "../images/twitter.svg";
+import linkedin from "../images/linkedin.svg";
+import pinterest from "../images/pinterest.png";
+import { blogContent } from "../hooks/blogs";
+import FooterLine from "../components/FooterLine.astro";
+import 'astro-breadcrumbs/breadcrumbs.css';
+import { Breadcrumbs } from "astro-breadcrumbs";
+import Footer from "../components/Footer.astro";
+
+const { title } = Astro.props;
+const { frontmatter } = Astro.props;
+console.log(frontmatter);
+
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <div class="">
+        
+        
+         </div>
+        <title>{frontmatter.title}</title>
+    </head>
+    <body class="relative">
+        <div class="fixed top-0 left-0 z-50 w-full">
+            <Navbar client:load />
+        </div>
+<main>
+        <div class="pt-48 prose-sm lg:prose-2xl md:mx-20">
+            <div class="pl-20 lg:pl-56">
+                <div class="flex gap-2">
+                    <p>{frontmatter.tags}</p>
+                    <p>{frontmatter.time} minuta čitanja</p>
+                </div>
+                <h1 class="font-bold w-1/2 lg:text-7xl">{frontmatter.title}</h1>
+                
+                <div
+                    class="flex justify-start items-center gap-3 not-prose py-10"
+                >
+                    <img
+                        src={frontmatter.image.src}
+                        alt=" "
+                        class="rounded-full w-[100px] not-prose"
+                    />
+                    <div class="">
+                        <p class="not-prose m-0">Autor</p>
+                        <p class="not-prose m-0 font-bold">
+                            {frontmatter.author}
+                        </p>
+                    </div>
+                    <div>
+                        <p class="not-prose m-0">Objavljeno</p>
+                        <p class="not-prose m-0">{frontmatter.pubDate}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="font-bold">
+                    <Breadcrumbs >
+                <svg
+                slot="separator"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </Breadcrumbs>
+            </div>
+            <div class="flex flex-col lg:flex-row-reverse mx-20 gap-10">
+                <div class="w-full">
+                    <slot />
+                </div>
+                <aside class="flex gap-3 w-1/2 lg:block lg:w-1/12">
+                    <img src={facebook} alt="" class="w-1/8" />
+                    <img src={twitter} alt="" class="w-1/8" />
+                    <img src={linkedin} alt="" class="w-1/8" />
+                    <img src={pinterest} alt="" class="1/8 " />
+                </aside>
+            </div>
+        </div>
+        <div class="md:prose-xl lg:prose-2xl mx-10 ">
+
+            <h2>Zadnje objave</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-[600px] ">
+                {
+                    blogContent.slice(0, 2).map((item) => (
+                        <div class="group">
+                            <div class="not-prose relative overflow-hidden">
+                                <a
+                                    href={`${item.headline
+                                        .toLowerCase()
+                                        .replace(/\s/g, "-")
+                                        .replaceAll(",", "")
+                                        .replaceAll("!", "")}`}
+                                >
+                                    <img
+                                        src={item.src}
+                                        alt="images"
+                                        class=" w-full  rounded-sm transition-all duration-300 object-cover group-hover:scale-[105%]"
+                                    />
+                                </a>
+
+                                <div class="opacity-0 pb-2 transition-all duration-500 absolute top-0 group-hover:translate-y-0 group-hover:opacity-100 w-full group-hover:bg-gradient-to-b from-gray-500 transparent flex justify-start items-center pl-5">
+                                    <div class="flex justify-start items-center duration-500 group-hover:translate-y-2 py-1">
+                                        <img
+                                            src={item.authorPhoto}
+                                            alt=""
+                                            class="rounded-full w-[60px] max-w-xs"
+                                        />
+                                        <div class="ml-4 text-white">
+                                            <p class="text-sm md:text-base">
+                                                Posted by{" "}
+                                                <span class="font-bold text-sm md:text-base">
+                                                    {item.author}
+                                                </span>
+                                            </p>
+                                            <p class="text-sm md:text-base">{item.date}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-black flex flex-col items-start justify-between not-prose ">
+                                <div class="flex gap-1">
+                                    <p class="text-red-600 font-bold text-sm pt-3 xl:text-base whitespace-nowrap">
+                                        {item.category}
+                                    </p>
+                                    <p class="text-sm pt-3 xl:text-base ">
+                                        &#x2022
+                                    </p>
+                                    <p class="text-sm pt-3 xl:text-base whitespace-nowrap ">
+                                        {item.time} minuta čitanja
+                                    </p>
+                                    
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl md:text-4xl py-5">
+                                        {item.headline}
+                                    </h2>
+                                    <p class="bold md:text-base">
+                                        {item.par}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+               
+           
+    
+                   
+    </main>
+</div>
+<div class="pt-64 w-full px-0 m-0">
+
+    <FooterLine/>
+</div>
+
+
+
+        <style></style>
+        <script type="module" src="../js/app.js"></script>
+    </body>
+</html>
