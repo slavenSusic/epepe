@@ -2,11 +2,11 @@
 const {footerText,grayText}=Astro.props
 ---
 
-<div class="bg-black/90 flex flex-wrap py-5 justify-between px-20 text-white">
-	<p>
+<div class="bg-black/90 flex flex-wrap justify-between px-5 md:px-10 2xl:px-20 text-white py-2  ">
+	<p class="text-sm md:text-base md:pl-28">
 		© <span id="year"></span> epepe.d.o.o
 	</p>
-	<p >
+	<p class="text-sm md:text-base whitespace-nowrap md:pr-28">
 		<a href="/impressum"><span class="hover:text-red-500">Impressum</a></span class="hover:text-red-500"></span>  | <span class="hover:text-red-500">Politike privatnosti </span> | <span class="hover:text-red-500"><a href="/o-kolacicima">O kolačićima</a></span> 
 	</p>
 
