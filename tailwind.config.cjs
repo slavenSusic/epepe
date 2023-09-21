@@ -928,6 +928,12 @@ module.exports = {
 					  marginTop: '1.6rem',
 					  marginBottom: '1.6rem',
 					},
+					p2: {
+						lineHeight: '1.5',
+						fontSize: '1rem',
+						marginTop: '1.6rem',
+						marginBottom: '1.6rem',
+					  },
 					blockquote: {
 					  marginTop: '2.67rem',
 					  marginBottom: '2.67rem',
