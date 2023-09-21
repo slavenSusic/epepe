@@ -767,15 +767,15 @@ module.exports = {
 					  lineHeight: '1',
 					},
 					h3: {
-					  fontSize: '2.2rem',
-					  marginTop: '1.6rem',
-					  marginBottom: '0.8rem',
-					  lineHeight: '0.9',
+					  fontSize: '3rem',
+					  marginTop: '1rem',
+					  marginBottom: '1.8rem',
+					  lineHeight: '1.2',
 					},
 					h4: {
-					  marginTop: '1.6rem',
+					 marginTop: '1.0rem',
 					  marginBottom: '0.4rem',
-					  lineHeight: '1.6',
+					  lineHeight: '1.0',
 					},
 					img: {
 					  marginTop: '1.6rem',
@@ -952,7 +952,7 @@ module.exports = {
 					  lineHeight: '1.',
 					},
 					h4: {
-					  marginTop: '3.2rem',
+					  marginTop: '1.2rem',
 					  marginBottom: '0.67rem',
 					  lineHeight: '1.6',
 					},
