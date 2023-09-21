@@ -116,7 +116,7 @@ function Navbar() {
           />
         </svg>
       </div>
-      <ul className="mt-3   p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-20 2xl:top-20">
+      <ul className="mt-3   p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-12 2xl:top-[48px]">
       <li className="text-left pl-3 hover:bg-gray-100 hover:text-red-400">
         <a href="/google-ads">
         <p className="">Google Ads</p></a>
@@ -157,19 +157,19 @@ function Navbar() {
           />
         </svg>
       </div>
-      <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute transition duration-200 ease-in-out shadow-2xl  top-20 2xl:top-20">
+      <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute transition duration-200 ease-in-out shadow-2xl  top-12 2xl:top-[48px]">
         <li className=" pt-3 hover:bg-gray-100 hover:text-red-400">
          <a href="vodenje-facebook-stranice">
-          <p className="">Vođenje Facebook <br /> stranice</p> </a>
+          <p className="text-sm">Vođenje Facebook <br /> stranice</p> </a>
         </li>
-        <li className=" pb-2 hover:bg-gray-100 hover:text-red-400">
+        <li className="  hover:bg-gray-100 hover:text-red-400">
           
           <a href="vodenje-instagram-profila">
-          <p className="">Vođenje Instagram <br/> profila</p></a>
+          <p className="text-sm">Vođenje Instagram <br/> profila</p></a>
         </li>
       </ul>
     </li>
-    <li className="flex flex-col items-end group whitespace-nowrap text-sm  transition duration-3000">
+    <li className="flex flex-col items-end group whitespace-nowrap   transition duration-3000">
       <span className="text-xs">03</span>
       <div className="flex items-center gap-2">
         <a href="web-i-desing">
@@ -189,7 +189,7 @@ function Navbar() {
           />
         </svg>
       </div>
-      <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-20 2xl:top-20">
+      <ul className="mt-3 p-2 hidden rounded-lg space-y-3 cursor-pointer bg-white group-hover:block absolute shadow-2xl  top-12 2xl:top-[48px]">
         <li className="top-5 hover:bg-gray-100 hover:text-red-400">
           
           <a href="/izrada-web-stranice">

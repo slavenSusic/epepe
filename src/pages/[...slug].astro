@@ -275,17 +275,17 @@ const { title, text,pic,pic2,category,headline,client,design,strategy,pic3,task 
         <img src={pic2} alt="" class="py-5">
         <img src={pic3} alt="" class="py-5">
     </aside>
-    <div class="flex sticky prose 2xl:prose-2xl top-0 flex-col  text-left md:w-1/2 p-10  ">
+    <div class="flex sticky prose prose-xl 2xl:prose-2xl top-0 flex-col lg:pt-32 lg:pl-10 md:px-10 xl:pl-20 xl:pr-64 text-left md:w-1/2  ">
     <p class="font-semibold p-0">{category}</p> 
    <h1 class="font-bold">{headline}</h1> 
-   <p class="pr-40">{text}</p>
-   {task && <p class="flex flex-col"><span class="font-bold">Task</span><span>{task}</span></p>}
+   <p2 class=" font-2xl ">{text}</p2>
+   {task && <p2 class="flex flex-col"><span class="font-bold">Task</span><span>{task}</span></p2>}
    <div class="flex gap-3">
  
     
-    {client && <p class="flex flex-col border-t-2 border-black"><span class="font-bold">Client</span><span>{client}</span></p>}
-    {design && <p class="flex flex-col border-t-2 border-black"><span class="font-bold">Design</span><span>{design}</span></p>}
-    {strategy && <p class="flex flex-col border-t-2 border-black"><span class="font-bold">Strategy</span><span>{strategy}</span></p>}
+    {client && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Client</span><span>{client}</span></p2>}
+    {design && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Design</span><span>{design}</span></p2>}
+    {strategy && <p2 class="flex flex-col border-t-2 border-black"><span class="font-bold">Strategy</span><span>{strategy}</span></p2>}
    
    </div>
     </div>
