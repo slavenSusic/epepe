@@ -44,8 +44,8 @@ console.log(frontmatter);
             <Navbar client:load />
         </div>
 <main>
-        <div class="pt-48 prose-sm lg:prose-2xl md:mx-20">
-            <div class="pl-20 lg:pl-56">
+        <div class="pt-48 prose-sm lg:prose-2xl md:mx-10">
+            <div class="pl-10 lg:pl-56">
                 <div class="flex gap-2">
                     <p>{frontmatter.tags}</p>
                     <p>{frontmatter.time} minuta čitanja</p>
@@ -90,7 +90,7 @@ console.log(frontmatter);
               </svg>
             </Breadcrumbs>
             </div>
-            <div class="flex flex-col lg:flex-row-reverse mx-20 gap-10">
+            <div class="flex flex-col lg:flex-row-reverse mx-10 gap-10">
                 <div class="w-full">
                     <slot />
                 </div>
@@ -102,9 +102,9 @@ console.log(frontmatter);
                 </aside>
             </div>
         </div>
-        <div class="md:prose-xl lg:prose-2xl mx-10 ">
+        <div class="md:prose-xl lg:prose-2xl mx-10 xl:pl-72 ">
 
-            <h2>Zadnje objave</h2>
+            <h3>Zadnje objave</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-[600px] ">
                 {
                     blogContent.slice(0, 2).map((item) => (
@@ -174,7 +174,7 @@ console.log(frontmatter);
                    
     </main>
 </div>
-<div class="pt-64 w-full px-0 m-0">
+<div class=" mt-[800px] md:mt-0 md:pt-64 w-full px-0 m-0">
 
     <FooterLine/>
 </div>
